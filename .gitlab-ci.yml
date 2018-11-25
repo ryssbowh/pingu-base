@@ -1,0 +1,24 @@
+stages:
+  - deploy
+
+deploy_dev:
+  stage: deploy
+  script:
+    - echo "Deploying to dev"
+    - composer dumpautoload -o
+  environment:
+    name: staging
+    url: https://staging.example.com
+  only:
+    - devel
+
+deploy_live:
+  stage: deploy
+  script:
+    - echo "Deploying to live"
+    - composer dumpautoload -o
+  environment:
+    name: live
+    url: https://live.example.com
+  only:
+    - master
