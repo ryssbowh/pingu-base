@@ -1,10 +1,11 @@
 {
-    "name": "nwidart/core",
-    "description": "",
+    "name": "eskimo/core-module",
+    "description": "Core module for eskimo",
+    "type" : "asgard-module",
     "authors": [
         {
-            "name": "Nicolas Widart",
-            "email": "n.widart@gmail.com"
+            "name": "Boris Blondin",
+            "email": "boris@weareeveryone.com"
         }
     ],
     "extra": {
@@ -22,7 +23,8 @@
     "require": {
         "orchestra/asset": "~3.0",
         "igaster/laravel-theme":"2.*",
-        "greabock/tentacles": "dev-master",
-        "lavary/laravel-menu": "1.7.2"
+        "greabock/tentacles": "1.0",
+        "lavary/laravel-menu": "1.7.2",
+        "composer/installers": "~1.0"
     }
 }

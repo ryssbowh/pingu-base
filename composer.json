@@ -1,19 +1,26 @@
 {
-    "name": "laravel/laravel",
-    "description": "The Laravel Framework.",
+    "name": "eskimo/base",
+    "description": "The Eskimo CMS.",
     "keywords": [
         "framework",
         "laravel"
     ],
     "license": "MIT",
     "type": "project",
+    "repositories": [
+      {
+     "type": "git",
+      "url": "http://gitlab.test/eskimo/core-module"
+      }
+    ],
     "require": {
         "php": "^7.1.3",
         "fideloper/proxy": "^4.0",
         "laravel/framework": "5.7.*",
         "laravel/tinker": "^1.0",
         "lavary/laravel-menu": "1.7.2",
-        "nwidart/laravel-modules": "^3.3"
+        "nwidart/laravel-modules": "^3.3",
+        "eskimo/core-module": "1.0"
     },
     "require-dev": {
         "beyondcode/laravel-dump-server": "^1.0",
@@ -58,7 +65,8 @@
     "config": {
         "preferred-install": "dist",
         "sort-packages": true,
-        "optimize-autoloader": true
+        "optimize-autoloader": true,
+        "secure-http": false
     },
     "minimum-stability": "dev",
     "prefer-stable": true

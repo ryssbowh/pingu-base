@@ -1,14 +1,14 @@
 <?php
-namespace Modules\Settings;
+namespace Modules\Core;
 
 use DB;
 use Cache;
-use Modules\Settings\Events\SettingChanged;
-use Modules\Settings\Events\SettingChanges;
+use Modules\Core\Events\SettingChanged;
+use Modules\Core\Events\SettingChanges;
 
 class Settings
 {
-    protected $registered = [];
+    protected $registered = []; //prout
     protected $encrypted = [];
 
     /**
