@@ -1,0 +1,25 @@
+{
+    "name": "nwidart/menu",
+    "description": "",
+    "authors": [
+        {
+            "name": "Boris Blondin",
+            "email": "blondin.boris@gmail.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Modules\\Menu\\Providers\\MenuServiceProvider"
+            ],
+            "aliases": {
+                
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Modules\\Menu\\": ""
+        }
+    }
+}
