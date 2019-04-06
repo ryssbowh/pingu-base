@@ -19,3 +19,4 @@ package.json
 composer.lock
 public/modules
 public/themes
+public/mix-manifest.json
