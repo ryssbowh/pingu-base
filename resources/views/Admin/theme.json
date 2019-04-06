@@ -1,5 +1,5 @@
 {
     "name": "Admin",
     "extends": "",
-    "asset-path": "Admin"
+    "asset-path": "themes/Admin"
 }

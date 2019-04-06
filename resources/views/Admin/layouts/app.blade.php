@@ -9,15 +9,13 @@
 
     <title>{{ config('app.name', 'Laravel') }}</title>
 
-    <!-- Scripts -->
-    <script src="{{ asset('js/app.js') }}" defer></script>
-
     <!-- Fonts -->
     <link rel="dns-prefetch" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet" type="text/css">
 
     <!-- Styles -->
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    {!! Asset::container('modules')->styles() !!}
+    {!! Asset::container('theme')->styles() !!}
 </head>
 <body>
     <div id="app">
@@ -41,11 +39,11 @@
                         <!-- Authentication Links -->
                         @guest
                             <li class="nav-item">
-                                <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
+                                <a class="nav-link" href="{{ route('user.login') }}">{{ __('Login') }}</a>
                             </li>
                             <li class="nav-item">
-                                @if (Route::has('register'))
-                                    <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
+                                @if (Route::has('user.register'))
+                                    <a class="nav-link" href="{{ route('user.register') }}">{{ __('Register') }}</a>
                                 @endif
                             </li>
                         @else
@@ -55,13 +53,13 @@
                                 </a>
 
                                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" href="{{ route('logout') }}"
+                                    <a class="dropdown-item" href="{{ route('user.logout') }}"
                                        onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
                                         {{ __('Logout') }}
                                     </a>
 
-                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                    <form id="logout-form" action="{{ route('user.logout') }}" method="POST" style="display: none;">
                                         @csrf
                                     </form>
                                 </div>
@@ -72,9 +70,23 @@
             </div>
         </nav>
 
+        @include('messages')
+
         <main class="py-4">
-            @yield('content')
+            @include('core::includes.notify')
+            <div class="container">
+                <div class="row">
+                    @include('menus.menu')
+                    @yield('content')
+                </div>
+            </div>
         </main>
     </div>
+
+    <!-- Scripts -->
+    {!! Asset::container('vendor')->scripts() !!}
+    {!! Asset::container('modules')->scripts() !!}
+    {!! Asset::container('theme')->scripts() !!}
+    
 </body>
 </html>

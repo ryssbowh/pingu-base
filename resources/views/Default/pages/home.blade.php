@@ -13,8 +13,7 @@
                             {{ session('status') }}
                         </div>
                     @endif
-
-                    This is home
+                    {{ $form->render() }}
                 </div>
             </div>
         </div>

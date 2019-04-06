@@ -1,6 +1,10 @@
 {
-    "/js/app.js": "/js/app.js",
-    "/css/app.css": "/css/app.css",
-    "/js/blog.js": "/js/blog.js",
-    "/css/blog.css": "/css/blog.css"
+    "/modules/Core/js/Core.js": "/modules/Core/js/Core.js",
+    "/modules/Core/css/Core.css": "/modules/Core/css/Core.css",
+    "/modules/JsGrid/css/JsGrid.css": "/modules/JsGrid/css/JsGrid.css",
+    "/modules/JsGrid/js/JsGrid.js": "/modules/JsGrid/js/JsGrid.js",
+    "/themes/Admin/js/Admin.js": "/themes/Admin/js/Admin.js",
+    "/themes/Default/js/Default.js": "/themes/Default/js/Default.js",
+    "/themes/Default/js/manifest.js": "/themes/Default/js/manifest.js",
+    "/themes/Default/js/vendor.js": "/themes/Default/js/vendor.js"
 }

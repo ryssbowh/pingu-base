@@ -1,4 +1,5 @@
 const mix = require('laravel-mix');
+const dl = require('directory-list');
 
 /*
  |--------------------------------------------------------------------------
@@ -11,9 +12,22 @@ const mix = require('laravel-mix');
  |
  */
 
-/* Allow multiple Laravel Mix applications*/
-require('laravel-mix-merge-manifest');
-mix.mergeManifest();
+const themeDir = 'public/themes/';
+const moduleDir = __dirname+'/Modules/';
 
-mix.js('resources/js/app.js', 'public/js')
-   .sass('resources/sass/app.scss', 'public/css');
+dl.list(moduleDir, true, function(dirs){
+	for(var index in dirs){
+		require(moduleDir+dirs[index]+'/webpack.mix.js');
+	}
+});
+
+dl.list(themeDir, true, function(dirs) {
+	for(var index in dirs){
+		mix.js(themeDir+dirs[index]+'/js/src/app.js', themeDir+dirs[index]+'/js/'+dirs[index]+'.js');
+		mix.sass(themeDir+dirs[index]+'/css/master.scss', themeDir+dirs[index]+'/css/'+dirs[index]+'.css');
+	}
+});
+
+mix.extract();
+
+mix.browserSync('laravel.test');
