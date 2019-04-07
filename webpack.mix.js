@@ -23,8 +23,8 @@ dl.list(moduleDir, true, function(dirs){
 
 dl.list(themeDir, true, function(dirs) {
 	for(var index in dirs){
-		mix.js(themeDir+dirs[index]+'/js/src/app.js', themeDir+dirs[index]+'/js/'+dirs[index]+'.js');
-		mix.sass(themeDir+dirs[index]+'/css/master.scss', themeDir+dirs[index]+'/css/'+dirs[index]+'.css');
+		mix.js(themeDir+dirs[index]+'/assets/js/app.js', themeDir+dirs[index]+'/assets/theme.js');
+		mix.sass(themeDir+dirs[index]+'/assets/css/master.scss', themeDir+dirs[index]+'/assets/theme.css');
 	}
 });
 
