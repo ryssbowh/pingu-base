@@ -1,6 +1,8 @@
 const mix = require('laravel-mix');
 const dl = require('directory-list');
+const fs = require('fs');
 
+require('laravel-mix-merge-manifest');
 /*
  |--------------------------------------------------------------------------
  | Mix Asset Management
@@ -12,8 +14,16 @@ const dl = require('directory-list');
  |
  */
 
-const themeDir = 'public/themes/';
+const themeDir = __dirname+'/public/themes/';
 const moduleDir = __dirname+'/Modules/';
+
+mix.setPublicPath('public').mergeManifest();
+
+dl.list(themeDir, true, function(dirs) {
+	for(var index in dirs){
+		require(themeDir+dirs[index]+'/webpack.mix.js');
+	}
+});
 
 dl.list(moduleDir, true, function(dirs){
 	for(var index in dirs){
@@ -21,13 +31,14 @@ dl.list(moduleDir, true, function(dirs){
 	}
 });
 
-dl.list(themeDir, true, function(dirs) {
-	for(var index in dirs){
-		mix.js(themeDir+dirs[index]+'/assets/js/app.js', themeDir+dirs[index]+'/assets/theme.js');
-		mix.sass(themeDir+dirs[index]+'/assets/css/master.scss', themeDir+dirs[index]+'/assets/theme.css');
-	}
+//We can't change node current working directory, and that causes manifest.js and vendor.js (that are created by mix.extract()),
+//to be located in the latest treated module/theme js public directory (modules/JsGrid/js for example). There is no workaround
+//at the time of writing.
+//So in order to 'set' node working directory to public/ we run mix on a random and empty js file:
+mix.js('public/bust.js','bust2.js').then(() => {
+	fs.unlink(__dirname + '/public/bust2.js');
 });
 
 mix.extract();
 
-mix.browserSync('laravel.test');
+// mix.browserSync('laravel.test');

@@ -20,3 +20,5 @@ composer.lock
 public/modules
 public/themes
 public/mix-manifest.json
+public/vendor.js
+public/manifest.js
