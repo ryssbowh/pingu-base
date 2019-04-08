@@ -150,18 +150,28 @@ return [
         /*
          * Package Service Providers...
          */
+        BeyondCode\DumpServer\DumpServerServiceProvider::class,
+        Fideloper\Proxy\TrustedProxyServiceProvider::class,
+        Illuminate\Notifications\NexmoChannelServiceProvider::class,
+        Illuminate\Notifications\SlackChannelServiceProvider::class,
+        Laravel\Tinker\TinkerServiceProvider::class,
+        Carbon\Laravel\ServiceProvider::class,
+        NunoMaduro\Collision\Adapters\Laravel\CollisionServiceProvider::class,
+        Nwidart\Modules\LaravelModulesServiceProvider::class,
+
 
         /*
          * Application Service Providers...
          */
-        App\Providers\AppServiceProvider::class,
         App\Providers\AuthServiceProvider::class,
         // App\Providers\BroadcastServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
 
         Collective\Html\HtmlServiceProvider::class,
-        Orchestra\Asset\AssetServiceProvider::class
+        Orchestra\Asset\AssetServiceProvider::class,
+
+        Modules\Core\Providers\ThemeServiceProvider::class
     ],
 
     /*

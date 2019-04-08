@@ -36,7 +36,9 @@ dl.list(moduleDir, true, function(dirs){
 //at the time of writing.
 //So in order to 'set' node working directory to public/ we run mix on a random and empty js file:
 mix.js('public/bust.js','bust2.js').then(() => {
-	fs.unlink(__dirname + '/public/bust2.js');
+	if (fs.existsSync(__dirname + '/public/bust2.js')) {
+		fs.unlink(__dirname + '/public/bust2.js');
+  	}
 });
 
 mix.extract();
