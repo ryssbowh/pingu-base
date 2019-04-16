@@ -6,7 +6,7 @@ return [
     'adminTheme' => 'Admin',
     'frontTheme' => 'Default',
     'themes' => [
-        'themes_path' => base_path('public/themes'),
+        'themes_path' => 'themes',
         'views_path' => 'views',
         'asset_path' => 'assets',
         'images_path' => 'images',

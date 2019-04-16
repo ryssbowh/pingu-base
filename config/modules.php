@@ -18,8 +18,8 @@ return [
     |
     */
     'stubs' => [
-        'enabled' => false,
-        'path' => base_path() . '/vendor/nwidart/laravel-modules/src/Commands/stubs',
+        'enabled' => true,
+        'path' => base_path('Modules/Core/stubs/modules'),
         'files' => [
             'routes/web' => 'Routes/web.php',
             'routes/api' => 'Routes/api.php',
@@ -138,10 +138,10 @@ return [
     |
     */
     'composer' => [
-        'vendor' => 'nwidart',
+        'vendor' => 'eskimo',
         'author' => [
-            'name' => 'Nicolas Widart',
-            'email' => 'n.widart@gmail.com',
+            'name' => 'Boris Blondin',
+            'email' => 'blondin.boris@gmail.com',
         ],
     ],
     /*
