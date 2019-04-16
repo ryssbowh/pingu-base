@@ -22,3 +22,5 @@ public/themes/*
 public/mix-manifest.json
 public/vendor.js
 public/manifest.js
+
+/config/
