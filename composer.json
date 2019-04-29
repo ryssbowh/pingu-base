@@ -1,6 +1,6 @@
 {
-    "name": "eskimo/base",
-    "description": "The Eskimo CMS.",
+    "name": "pingu/base",
+    "description": "The Pingu CMS.",
     "keywords": [
         "framework",
         "laravel"
@@ -10,7 +10,7 @@
     "repositories": [
         {
             "type": "git",
-            "url": "http://gitlab.test/eskimo/core-module"
+            "url": "http://gitlabboris.ddns.net/pingu/core-module"
         }
     ],
     "require": {
@@ -23,7 +23,8 @@
         "laravelcollective/html": "^5.8.0",
         "lavary/laravel-menu": "1.7.2",
         "nwidart/laravel-modules": "^4.0",
-        "paragonie/random_compat": "2.*"
+        "paragonie/random_compat": "2.*",
+        "core-module": "1.0.*"
     },
     "require-dev": {
         "beyondcode/laravel-dump-server": "^1.0",
