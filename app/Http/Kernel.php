@@ -38,6 +38,7 @@ class Kernel extends HttpKernel
         ],
 
         'api' => [
+            \Modules\Core\Http\Middleware\SetApiThemeMiddleware::class,
             'throttle:60,1',
             'bindings',
         ],
