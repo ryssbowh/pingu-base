@@ -31,6 +31,10 @@
         {
             "type": "vcs",
             "url": "http://gitlabboris.ddns.net/pingu/jsgrid-module"
+        },
+        {
+            "type": "vcs",
+            "url": "http://gitlabboris.ddns.net/pingu/page-module"
         }
     ],
     "require": {
