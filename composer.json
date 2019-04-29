@@ -10,7 +10,7 @@
     "repositories": [
         {
             "type": "git",
-            "url": "http://gitlabboris.ddns.net/pingu/core-module"
+            "url": "http://gitlabboris.ddns.net/pingu"
         }
     ],
     "require": {
