@@ -47,7 +47,13 @@
         "lavary/laravel-menu": "1.7.2",
         "nwidart/laravel-modules": "^4.0",
         "paragonie/random_compat": "2.*",
-        "pingu/core-module": "1.0.*"
+        "pingu/core-module": "1.0.*",
+        "pingu/activity-module": "1.0.*",
+        "pingu/user-module": "1.0.*",
+        "pingu/settings-module": "1.0.*",
+        "pingu/forms-module": "1.0.*",
+        "pingu/jsgrid-module": "1.0.*",
+        "pingu/page-module": "1.0.*"
     },
     "require-dev": {
         "beyondcode/laravel-dump-server": "^1.0",
