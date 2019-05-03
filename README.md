@@ -31,6 +31,7 @@ This contains the laravel code base (5.7) and a few changes to the code :
 - `./artisan module:migrate`
 - `./artisan module:seed`
 - `./artisan core:merge-packages` (optionnal, I added packages.json to base actually)
+- `npm install`
 - `npm run dev`
 - `./artisan module:publish-config`
 - `./artisan key:generate`
