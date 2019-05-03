@@ -39,6 +39,10 @@
         {
             "type": "vcs",
             "url": "https://github.com/ryssbowh/pingu-admin-theme"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/ryssbowh/pingu-theme-installer-plugin"
         }
     ],
     "require": {
@@ -53,7 +57,7 @@
         "nwidart/laravel-modules": "^4.0",
         "paragonie/random_compat": "2.*",
         "pingu/core-module": "1.0.*",
-        "davidbarratt/custom-installer": "^1.0@alpha"
+        "pingu/theme-installer-plugin": "1.0.*"
     },
     "require-dev": {
         "beyondcode/laravel-dump-server": "^1.0",
@@ -81,9 +85,6 @@
     "extra": {
         "laravel": {
             "dont-discover": ["*"]
-        },
-        "custom-installer":{
-            "public/themes/{$name}": ["type:pingu-theme"]
         }
     },
     "scripts": {
