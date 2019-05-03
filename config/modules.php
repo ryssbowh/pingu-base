@@ -138,7 +138,7 @@ return [
     |
     */
     'composer' => [
-        'vendor' => 'eskimo',
+        'vendor' => 'pingu',
         'author' => [
             'name' => 'Boris Blondin',
             'email' => 'blondin.boris@gmail.com',

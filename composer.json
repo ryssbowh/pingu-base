@@ -35,6 +35,10 @@
         {
             "type": "vcs",
             "url": "https://github.com/ryssbowh/pingu-page-module"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/ryssbowh/pingu-admin-theme"
         }
     ],
     "require": {
