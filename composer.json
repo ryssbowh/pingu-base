@@ -83,7 +83,7 @@
             "dont-discover": ["*"]
         },
         "custom-installer":{
-            "public/themes": ["type:pingu-theme"]
+            "public/themes/{$name}": ["type:pingu-theme"]
         }
     },
     "scripts": {
