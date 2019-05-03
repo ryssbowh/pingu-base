@@ -52,7 +52,8 @@
         "lavary/laravel-menu": "1.7.2",
         "nwidart/laravel-modules": "^4.0",
         "paragonie/random_compat": "2.*",
-        "pingu/core-module": "1.0.*"
+        "pingu/core-module": "1.0.*",
+        "davidbarratt/custom-installer": "^1.0@alpha"
     },
     "require-dev": {
         "beyondcode/laravel-dump-server": "^1.0",
@@ -81,7 +82,9 @@
         "laravel": {
             "dont-discover": ["*"]
         },
-        "class": "Modules\\Core\\Composer\\ThemeInstallerPlugin"
+        "custom-installer":{
+            "public/themes": ["type:pingu-theme"]
+        }
     },
     "scripts": {
         "post-root-package-install": [
