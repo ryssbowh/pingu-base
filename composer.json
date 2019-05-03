@@ -42,6 +42,10 @@
         },
         {
             "type": "vcs",
+            "url": "https://github.com/ryssbowh/pingu-default-theme"
+        },
+        {
+            "type": "vcs",
             "url": "https://github.com/ryssbowh/pingu-theme-installer-plugin"
         }
     ],
