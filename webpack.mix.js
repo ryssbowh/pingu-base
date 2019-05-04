@@ -27,7 +27,9 @@ dl.list(themeDir, true, function(dirs) {
 
 dl.list(moduleDir, true, function(dirs){
 	for(var index in dirs){
-		require(moduleDir+dirs[index]+'/webpack.mix.js');
+		if (fs.existsSync(moduleDir+dirs[index]+'/webpack.mix.js')) {
+			require(moduleDir+dirs[index]+'/webpack.mix.js');
+		}
 	}
 });
 
