@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'name' => env('APP_NAME', 'Laravel'),
+    'name' => env('APP_NAME', 'Pingu'),
 
     /*
     |--------------------------------------------------------------------------
@@ -171,7 +171,7 @@ return [
         Collective\Html\HtmlServiceProvider::class,
         Orchestra\Asset\AssetServiceProvider::class,
 
-        Modules\Core\Providers\ThemeServiceProvider::class
+        Pingu\Core\Providers\ThemeServiceProvider::class
     ],
 
     /*

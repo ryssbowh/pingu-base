@@ -38,6 +38,10 @@
         },
         {
             "type": "vcs",
+            "url": "https://github.com/ryssbowh/pingu-permissions-module"
+        },
+        {
+            "type": "vcs",
             "url": "https://github.com/ryssbowh/pingu-admin-theme"
         },
         {
@@ -78,7 +82,7 @@
         ],
         "psr-4": {
             "App\\": "app/",
-            "Modules\\": "Modules/"
+            "Pingu\\": "Modules/"
         }
     },
     "autoload-dev": {

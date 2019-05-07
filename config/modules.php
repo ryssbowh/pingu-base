@@ -8,7 +8,7 @@ return [
     | Default module namespace.
     |
     */
-    'namespace' => 'Modules',
+    'namespace' => 'Pingu',
     /*
     |--------------------------------------------------------------------------
     | Module Stubs
