@@ -4,6 +4,7 @@
 - [ ] clean up assets (delete them)
 - [ ] test an install with the php version forcing removed
 
+## v1.1 removed maintenance mode middleware
 ## v1.0.8 added Installation to README
 ## v1.0.3 wrote readme
 
@@ -19,6 +20,7 @@ This contains the laravel code base (5.7) and a few changes to the code :
 - removed views in resources folder
 - comments default laravel routes
 - disables laravel auto discover mechanism, here it's the modules that add packages, libraries in vendor folder should not be added automatically. If you disable a moduleand the libraries are still loaded it's not ideal.
+- removes default maintenance mode middleware
 
 ## Installation
 
