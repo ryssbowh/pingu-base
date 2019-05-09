@@ -64,7 +64,7 @@
         "lavary/laravel-menu": "1.7.2",
         "nwidart/laravel-modules": "^4.0",
         "paragonie/random_compat": "2.*",
-        "pingu/core-module": "1.0.*",
+        "pingu/core-module": "1.1.*",
         "pingu/theme-installer-plugin": "1.0.*"
     },
     "require-dev": {
