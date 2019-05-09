@@ -100,7 +100,7 @@
             "Pingu\\Core\\Console\\ComposerScripts::install"
         ],
         "post-autoload-dump": [
-            "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
+            "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump"
         ]
     },
     "config": {
