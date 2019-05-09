@@ -4,6 +4,7 @@
 - [ ] clean up assets (delete them)
 - [ ] test an install with the php version forcing removed
 
+## v1.2 install script
 ## v1.1 removed maintenance mode middleware
 ## v1.0.8 added Installation to README
 ## v1.0.3 wrote readme
@@ -26,15 +27,4 @@ This contains the laravel code base (5.7) and a few changes to the code :
 
 - `git clone https://github.com/ryssbowh/pingu-base.git mysite.test`
 - `cd mysite.test`
-- `composer install`
-- `cp .env.example .env`
-- fill .env with db details
-- create your database
-- `./artisan module:migrate`
-- `./artisan module:seed`
-- `./artisan core:merge-packages` (optionnal, I added packages.json to base actually)
-- `npm install`
-- `npm run dev`
-- `./artisan module:publish-config`
-- `./artisan key:generate`
-- visit : mysite.test/admin/users (/admin is broken for now)
+- run `composer install` and follow instructions
