@@ -37,9 +37,8 @@ class Kernel extends HttpKernel
         ],
 
         'api' => [
-            \Pingu\Core\Http\Middleware\SetApiThemeMiddleware::class,
             'throttle:60,1',
-            'bindings',
+            'bindings'
         ],
     ];
 
