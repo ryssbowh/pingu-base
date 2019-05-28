@@ -42,6 +42,10 @@
         },
         {
             "type": "vcs",
+            "url": "https://github.com/ryssbowh/pingu-menu-module"
+        },
+        {
+            "type": "vcs",
             "url": "https://github.com/ryssbowh/pingu-admin-theme"
         },
         {
