@@ -4,12 +4,12 @@
 - [ ] clean up assets (delete them)
 - [ ] test an install with the php version forcing removed
 
-## v1.2.1
+## v1.1.1
 - removed views when creating a module
 - removed packages.json from git
 - added Themes in psr-4
-- 
-## v1.2 install script
+
+## v1.1.1 install script
 ## v1.1 removed maintenance mode middleware
 ## v1.0.8 added Installation to README
 ## v1.0.3 wrote readme

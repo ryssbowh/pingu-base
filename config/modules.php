@@ -24,6 +24,7 @@ return [
             'routes/web' => 'Routes/web.php',
             'routes/api' => 'Routes/api.php',
             'routes/admin' => 'Routes/admin.php',
+            'routes/ajax' => 'Routes/ajax.php',
             'scaffold/config' => 'Config/config.php',
             'composer' => 'composer.json',
             'assets/js/app' => 'Resources/assets/js/app.js',
