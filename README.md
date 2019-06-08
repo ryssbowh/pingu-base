@@ -38,6 +38,9 @@ This contains the laravel code base (5.7) and a few changes to the code :
 - removes default maintenance mode middleware
 - removes `ConvertEmptyStringToNull` global middleware
 
+## Creating a module
+use `module:make` command to create a new module.
+
 ## Installation
 
 - `git clone https://github.com/ryssbowh/pingu-base.git mysite.test`
