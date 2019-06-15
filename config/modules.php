@@ -108,13 +108,12 @@ return [
             'repository' => ['path' => 'Repositories', 'generate' => false],
             'event' => ['path' => 'Events', 'generate' => false],
             'listener' => ['path' => 'Listeners', 'generate' => false],
-            'policies' => ['path' => 'Policies', 'generate' => false],
+            'policies' => ['path' => 'Policies', 'generate' => false], 
             'rules' => ['path' => 'Rules', 'generate' => false],
             'jobs' => ['path' => 'Jobs', 'generate' => false],
             'emails' => ['path' => 'Emails', 'generate' => false],
             'notifications' => ['path' => 'Notifications', 'generate' => false],
-            'resource' => ['path' => 'Transformers', 'generate' => false],
-            'exceptions' => ['path' => 'Exceptions', 'generate' => false],
+            'resource' => ['path' => 'Transformers', 'generate' => false]
         ],
     ],
     /*
