@@ -6,6 +6,10 @@
 - [ ] Breadcrumbs
 - [ ] view suggestions
 
+## v2.0.0
+- added tmp disk
+- changed themes folder
+
 ## v1.1.6
 - Removed `ConvertEmptyStringToNull` global middleware
 - added event service provider to modules config
