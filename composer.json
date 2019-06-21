@@ -87,10 +87,11 @@
             "database/seeds",
             "database/factories"
         ],
+        "exclude-from-classmap":["Modules/*/docs"],
         "psr-4": {
             "App\\": "app/",
             "Pingu\\": "Modules/",
-            "Pingu\\Themes\\": "public/themes/"
+            "Pingu\\Themes\\": "Themes/"
         }
     },
     "autoload-dev": {

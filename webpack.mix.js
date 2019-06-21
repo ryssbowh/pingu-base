@@ -14,14 +14,16 @@ require('laravel-mix-merge-manifest');
  |
  */
 
-const themeDir = __dirname+'/public/themes/';
+const themeDir = __dirname+'/Themes/';
 const moduleDir = __dirname+'/Modules/';
 
 mix.setPublicPath('public').mergeManifest();
 
 dl.list(themeDir, true, function(dirs) {
 	for(var index in dirs){
-		require(themeDir+dirs[index]+'/webpack.mix.js');
+		if (fs.existsSync(themeDir+dirs[index]+'/webpack.mix.js')) {
+			require(themeDir+dirs[index]+'/webpack.mix.js');
+		}
 	}
 });
 
@@ -33,10 +35,13 @@ dl.list(moduleDir, true, function(dirs){
 	}
 });
 
-//We can't change node current working directory, and that causes manifest.js and vendor.js (that are created by mix.extract()),
-//to be located in the latest treated module/theme js public directory (modules/JsGrid/js for example). There is no workaround
-//at the time of writing.
-//So in order to 'set' node working directory to public/ we run mix on a random and empty js file:
+/**
+ * We can't change node current working directory, and that causes manifest.js and vendor.js 
+ * (that are created by mix.extract()), to be located in the latest treated module/theme js 
+ * public directory (modules/JsGrid/js for example). 
+ * There is no workaround at the time of writing.
+ * So in order to 'set' node working directory to public/ we run mix on a random and empty js file:
+*/
 mix.js('public/bust.js','bust2.js').then(() => {
 	if (fs.existsSync(__dirname + '/public/bust2.js')) {
 		fs.unlink(__dirname + '/public/bust2.js');
