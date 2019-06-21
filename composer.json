@@ -50,6 +50,14 @@
         },
         {
             "type": "vcs",
+            "url": "https://github.com/ryssbowh/pingu-media-module"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/ryssbowh/pingu-honeypot-module"
+        },
+        {
+            "type": "vcs",
             "url": "https://github.com/ryssbowh/pingu-admin-theme"
         },
         {
@@ -72,7 +80,7 @@
         "nwidart/laravel-modules": "^4.0",
         "paragonie/random_compat": "2.*",
         "pingu/core-module": "^2.0",
-        "pingu/theme-installer-plugin": "1.0.*"
+        "pingu/theme-installer-plugin": "^1.2"
     },
     "require-dev": {
         "beyondcode/laravel-dump-server": "^1.0",
