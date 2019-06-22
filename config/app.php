@@ -26,7 +26,7 @@ return [
     |
     */
 
-    'env' => env('APP_ENV', 'production'),
+    'env' => env('APP_ENV', 'local'),
 
     /*
     |--------------------------------------------------------------------------
@@ -39,7 +39,7 @@ return [
     |
     */
 
-    'debug' => env('APP_DEBUG', false),
+    'debug' => env('APP_DEBUG', true),
 
     /*
     |--------------------------------------------------------------------------
@@ -104,7 +104,7 @@ return [
     |
     */
 
-    'key' => env('APP_KEY'),
+    'key' => env('APP_KEY','base64:7+GMxeKPXrV5mwsI9XlrnubTvjYAgznjSCJSyF06+cQ='),
 
     'cipher' => 'AES-256-CBC',
 
@@ -158,7 +158,7 @@ return [
         Carbon\Laravel\ServiceProvider::class,
         NunoMaduro\Collision\Adapters\Laravel\CollisionServiceProvider::class,
         Nwidart\Modules\LaravelModulesServiceProvider::class,
-
+        RachidLaasri\LaravelInstaller\Providers\LaravelInstallerServiceProvider::class,
 
         /*
          * Application Service Providers...

@@ -109,9 +109,6 @@
         }
     },
     "scripts": {
-        "post-install-cmd":[
-            "Pingu\\Core\\Console\\ComposerScripts::install"
-        ],
         "post-autoload-dump": [
             "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump"
         ]
