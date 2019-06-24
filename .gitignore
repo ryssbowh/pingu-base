@@ -12,15 +12,18 @@ yarn-error.log
 .phpunit.result.cache
 /Modules/
 package-lock.json
-package.json
+package.json*
 *.log
 composer.lock
 
+/public/modules
+/punlic/themes
 /public/module-assets
+/public/theme-assets
 /public/themes/*
 /public/mix-manifest.json
 /public/vendor.js
 /public/manifest.js
 /public/hot
 /public/storage
-public/modules/*
+/public/modules/*
