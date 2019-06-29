@@ -67,6 +67,10 @@
         {
             "type": "vcs",
             "url": "https://github.com/ryssbowh/pingu-theme-installer-plugin"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/ryssbowh/pingu-installer"
         }
     ],
     "require": {
@@ -79,8 +83,9 @@
         "laravelcollective/html": "^5.8.0",
         "nwidart/laravel-modules": "^4.0",
         "paragonie/random_compat": "2.*",
-        "pingu/core-module": "^2.0",
-        "pingu/theme-installer-plugin": "^1.2"
+        "pingu/core-module": "dev-master",
+        "pingu/theme-installer-plugin": "dev-master",
+        "pingu/installer": "dev-master"
     },
     "require-dev": {
         "beyondcode/laravel-dump-server": "^1.0",
@@ -96,7 +101,10 @@
             "App\\": "app/",
             "Pingu\\": "Modules/",
             "Pingu\\Themes\\": "Themes/"
-        }
+        },
+        "files": [
+            "app/helpers.php"
+        ]
     },
     "autoload-dev": {
         "psr-4": {
@@ -111,6 +119,12 @@
     "scripts": {
         "post-autoload-dump": [
             "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump"
+        ],
+        "post-install-cmd": [
+            "Pingu\\Core\\Console\\ComposerScripts::postInstall"
+        ],
+        "post-update-cmd":[
+            "Pingu\\Core\\Console\\ComposerScripts::postUpdate"
         ]
     },
     "config": {

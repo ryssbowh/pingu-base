@@ -3,9 +3,6 @@
 namespace App\Http;
 
 use Illuminate\Foundation\Http\Kernel as HttpKernel;
-use Pingu\Core\Http\Middleware\ActivateDebugBar;
-use Pingu\Core\Http\Middleware\CheckForMaintenanceMode;
-use Pingu\Core\Http\Middleware\SetAjaxThemeMiddleware;
 use Pingu\Core\Http\Middleware\SetThemeMiddleware;
 
 class Kernel extends HttpKernel
@@ -42,6 +39,7 @@ class Kernel extends HttpKernel
             \Illuminate\View\Middleware\ShareErrorsFromSession::class,
             \App\Http\Middleware\VerifyCsrfToken::class,
             \Illuminate\Routing\Middleware\SubstituteBindings::class,
+            SetThemeMiddleware::class
         ]
     ];
 

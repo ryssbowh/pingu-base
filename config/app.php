@@ -157,7 +157,6 @@ return [
         Laravel\Tinker\TinkerServiceProvider::class,
         Carbon\Laravel\ServiceProvider::class,
         NunoMaduro\Collision\Adapters\Laravel\CollisionServiceProvider::class,
-        Nwidart\Modules\LaravelModulesServiceProvider::class,
 
         /*
          * Application Service Providers...
@@ -169,8 +168,9 @@ return [
 
         Collective\Html\HtmlServiceProvider::class,
         Orchestra\Asset\AssetServiceProvider::class,
-
-        Pingu\Core\Providers\ThemeServiceProvider::class
+        Nwidart\Modules\LaravelModulesServiceProvider::class,
+        Pingu\Core\Providers\ThemeServiceProvider::class,
+        PinguInstaller\Providers\PinguInstallerServiceProvider::class
     ],
 
     /*
