@@ -6,6 +6,8 @@
 - [ ] Breadcrumbs
 - [ ] view suggestions
 
+## v2.1.0 Integrated installation package
+
 ## v2.0.0
 - added tmp disk
 - changed themes folder
@@ -50,4 +52,4 @@ use `module:make` command to create a new module.
 - `git clone https://github.com/ryssbowh/pingu-base.git mysite.test`
 - `cd mysite.test`
 - run `composer install`
-- run `./artisan install` and follow instructions
+- visit mysite.test/install
