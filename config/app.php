@@ -157,20 +157,14 @@ return [
         Laravel\Tinker\TinkerServiceProvider::class,
         Carbon\Laravel\ServiceProvider::class,
         NunoMaduro\Collision\Adapters\Laravel\CollisionServiceProvider::class,
-
-        /*
-         * Application Service Providers...
-         */
-        // App\Providers\AuthServiceProvider::class,
-        // App\Providers\BroadcastServiceProvider::class,
-        // App\Providers\EventServiceProvider::class,
-        // App\Providers\RouteServiceProvider::class,
-
         Collective\Html\HtmlServiceProvider::class,
         Orchestra\Asset\AssetServiceProvider::class,
         Nwidart\Modules\LaravelModulesServiceProvider::class,
-        Pingu\Core\Providers\ThemeServiceProvider::class,
         PinguInstaller\Providers\PinguInstallerServiceProvider::class
+        
+        /*
+         * Application Service Providers...
+         */
     ],
 
     /*

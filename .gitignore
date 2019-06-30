@@ -1,5 +1,6 @@
 /node_modules
 /storage/*.key
+/storage/installed
 /vendor
 /.idea
 /.vscode
@@ -17,13 +18,12 @@ package.json*
 composer.lock
 
 /public/modules
-/punlic/themes
-/public/module-assets
-/public/theme-assets
-/public/themes/*
-/public/mix-manifest.json
-/public/vendor.js
-/public/manifest.js
+/public/themes
 /public/hot
 /public/storage
-/public/modules/*
+/public/vendor
+/public/theme-assets
+/public/module-assets
+/public/vendor.js
+/public/mix-manifest.json
+/public/manifest.js

@@ -3,7 +3,6 @@
 namespace App\Http;
 
 use Illuminate\Foundation\Http\Kernel as HttpKernel;
-use Pingu\Core\Http\Middleware\SetThemeMiddleware;
 
 class Kernel extends HttpKernel
 {
@@ -38,8 +37,7 @@ class Kernel extends HttpKernel
             // \Illuminate\Session\Middleware\AuthenticateSession::class,
             \Illuminate\View\Middleware\ShareErrorsFromSession::class,
             \App\Http\Middleware\VerifyCsrfToken::class,
-            \Illuminate\Routing\Middleware\SubstituteBindings::class,
-            SetThemeMiddleware::class
+            \Illuminate\Routing\Middleware\SubstituteBindings::class
         ]
     ];
 

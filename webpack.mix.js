@@ -44,7 +44,8 @@ dl.list(moduleDir, true, function(dirs){
 */
 mix.js('public/bust.js','bust2.js').then(() => {
 	if (fs.existsSync(__dirname + '/public/bust2.js')) {
-		fs.unlink(__dirname + '/public/bust2.js');
+		fs.chmodSync(__dirname + '/public/bust2.js', 0o777);
+		fs.unlinkSync(__dirname + '/public/bust2.js');
   	}
 });
 

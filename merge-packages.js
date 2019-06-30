@@ -27,6 +27,8 @@ dl.list(moduleDir, true, function(dirs){
 
 
 packages = JSON.parse(packages);
-let data = JSON.stringify(packages, null, 4);
+var data = JSON.stringify(packages, null, 4);
 
-fs.writeFileSync('package.json', data);
+fs.writeFileSync(__dirname +'/package.json', data);
+
+process.exit(0);
