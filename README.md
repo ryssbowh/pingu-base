@@ -1,33 +1,10 @@
 # Pingu Base
 
 ## TODO
-- [ ] clean up assets (delete them)
+- [x] clean up assets (delete them)
 - [ ] test an install with the php version forcing removed
 - [ ] Breadcrumbs
 - [ ] view suggestions
-
-## v2.1.0 Integrated installation package
-
-## v2.0.0
-- added tmp disk
-- changed themes folder
-
-## v1.1.6
-- Removed `ConvertEmptyStringToNull` global middleware
-- added event service provider to modules config
-- added auth service provider to modules config
-- added exceptions config to modules
-- added content module repository
-
-## v1.1.1
-- removed views when creating a module
-- removed packages.json from git
-- added Themes in psr-4
-
-## v1.1.1 install script
-## v1.1 removed maintenance mode middleware
-## v1.0.8 added Installation to README
-## v1.0.3 wrote readme
 
 ## Base
 This contains the laravel code base (5.7) and a few changes to the code :
