@@ -2,7 +2,7 @@ var merge = require('merge-package-json');
 const fs = require('fs');
 const dl = require('directory-list');
 
-var packages = require(__dirname + '/package-base.json');
+var packages = require(__dirname + '/package.json');
 
 const themeDir = __dirname+'/Themes/';
 const moduleDir = __dirname+'/Modules/';

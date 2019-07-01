@@ -29,4 +29,5 @@ use `module:make` command to create a new module.
 - `git clone https://github.com/ryssbowh/pingu-base.git mysite.test`
 - `cd mysite.test`
 - run `composer install`
+- make sure all folders/files are writable by server.
 - visit mysite.test/install

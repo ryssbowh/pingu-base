@@ -13,7 +13,6 @@ yarn-error.log
 .phpunit.result.cache
 /Modules/
 package-lock.json
-package.json*
 *.log
 composer.lock
 
