@@ -58,6 +58,14 @@
         },
         {
             "type": "vcs",
+            "url": "https://github.com/ryssbowh/pingu-devel-module"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/ryssbowh/pingu-taxonomy-module"
+        },
+        {
+            "type": "vcs",
             "url": "https://github.com/ryssbowh/pingu-admin-theme"
         },
         {
