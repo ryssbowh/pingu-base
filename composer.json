@@ -98,7 +98,8 @@
         "pingu/core-module": "dev-master",
         "pingu/devel-module": "dev-master",
         "pingu/installer": "dev-master",
-        "pingu/theme-installer-plugin": "dev-master"
+        "pingu/theme-installer-plugin": "dev-master",
+        "ryssbowh/unique-migrations": "^1.0"
     },
     "require-dev": {
         "beyondcode/laravel-dump-server": "^1.0",
