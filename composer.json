@@ -14,6 +14,14 @@
         },
         {
             "type": "vcs",
+            "url": "https://github.com/ryssbowh/pingu-field-module"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/ryssbowh/pingu-entity-module"
+        },
+        {
+            "type": "vcs",
             "url": "https://github.com/ryssbowh/pingu-activity-module"
         },
         {
@@ -23,10 +31,6 @@
         {
             "type": "vcs",
             "url": "https://github.com/ryssbowh/pingu-content-module"
-        },
-        {
-            "type": "vcs",
-            "url": "https://github.com/ryssbowh/pingu-settings-module"
         },
         {
             "type": "vcs",
@@ -83,6 +87,10 @@
         {
             "type": "vcs",
             "url": "https://github.com/ryssbowh/laravel-modules"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/ryssbowh/linfo"
         }
     ],
     "require": {
@@ -102,11 +110,12 @@
     },
     "require-dev": {
         "beyondcode/laravel-dump-server": "^1.0",
+        "composer/composer": "^1.8",
         "filp/whoops": "^2.0",
         "fzaninotto/faker": "^1.4",
         "mockery/mockery": "^1.0",
         "nunomaduro/collision": "^2.0",
-        "composer/composer": "^1.8"
+        "phpmd/phpmd": "^2.7"
     },
     "autoload": {
         "exclude-from-classmap":["Modules/*/docs"],

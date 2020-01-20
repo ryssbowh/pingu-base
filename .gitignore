@@ -27,3 +27,6 @@ composer.lock
 /public/vendor.js
 /public/mix-manifest.json
 /public/manifest.js
+
+config/
+docs/

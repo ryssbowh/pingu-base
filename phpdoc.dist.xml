@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<phpdoc>
+  <parser>
+    <target>docs</target>
+  </parser>
+  <transformer>
+    <target>docs</target>
+  </transformer>
+  <files>
+    <directory>Modules/</directory>
+    <directory>app/</directory>
+    <directory>Themes/</directory>
+    <ignore>Modules/*/Database/*</ignore>
+    <ignore>Modules/*/Routes/*</ignore>
+    <ignore>Modules/*/Resources/*</ignore>
+  </files>
+</phpdoc>

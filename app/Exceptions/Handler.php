@@ -46,7 +46,17 @@ class Handler extends ExceptionHandler
      */
     public function render($request, Exception $exception)
     {
-        // \Theme::setDefault();
+        $this->setTheme();
         return parent::render($request, $exception);
+    }
+
+    public function setTheme()
+    {
+        try {
+            \Theme::setFront();
+        } catch (\Exception $e) {
+            return false;
+        }
+        return true;
     }
 }
