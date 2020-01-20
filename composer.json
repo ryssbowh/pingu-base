@@ -18,6 +18,10 @@
         },
         {
             "type": "vcs",
+            "url": "https://github.com/ryssbowh/pingu-block-module"
+        },
+        {
+            "type": "vcs",
             "url": "https://github.com/ryssbowh/pingu-entity-module"
         },
         {
