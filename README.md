@@ -30,3 +30,6 @@ use `module:make` command to create a new module.
 - run `composer install`
 - make sure all folders/files are writable by server.
 - visit mysite.test/install
+- Follow procedure
+- Visit mysite.test/admin
+- Login is pingu@god.com password admin
