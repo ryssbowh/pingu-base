@@ -4,6 +4,7 @@ namespace App\Exceptions;
 
 use Exception;
 use Illuminate\Foundation\Exceptions\Handler as ExceptionHandler;
+use Symfony\Component\Debug\Exception\FatalThrowableError;
 
 class Handler extends ExceptionHandler
 {
@@ -53,8 +54,10 @@ class Handler extends ExceptionHandler
     public function setTheme()
     {
         try {
-            \Theme::setFront();
-        } catch (\Exception $e) {
+            if (class_exists('Theme')) {
+                \Theme::setFront();
+            }
+        } catch (FatalThrowableError $e) {
             return false;
         }
         return true;
