@@ -25,11 +25,33 @@ use `module:make` command to create a new module.
 
 ## Installation
 
+### Clone repo
 - `git clone https://github.com/ryssbowh/pingu-base.git mysite.test`
 - `cd mysite.test`
 - run `composer install`
 - make sure all folders/files are writable by server.
+
+### Install
+
 - visit mysite.test/install
 - Follow procedure
 - Visit mysite.test/admin
-- Login is pingu@god.com password admin
+- Login is god@pingu.test password admin
+
+Or manually with a terminal :
+
+- create .env file
+- `./artisan module:disable-all` disable all modules
+- `./artisan module:enable-all` enable all core modules
+- `./artisan module:reinstall` drop database and run install migrations for core modules
+- Enable optionnal modules with `./artisan module:enable Name`
+- `./artisan module:migrate` migrate all enabled modules
+- `./artisan module:seed` seed all modules
+
+or in one liner : `./artisan module:disable-all && ./artisan module:enable-all && ./artisan module:reinstall && ./artisan module:migrate && ./artisan module:seed`
+
+Pingu will be considered installed when the file `storage/installed` exists.
+
+## Documentation
+
+Documentation can be generated with the command `./artisan generate-doc`, the output will be in the docs folder
