@@ -47,8 +47,7 @@ Or manually with a terminal :
 - Enable optionnal modules with `./artisan module:enable Name`
 - `./artisan module:migrate` migrate all enabled modules
 - `./artisan module:seed` seed all modules
-
-or in one liner : `./artisan module:disable-all && ./artisan module:enable-all && ./artisan module:reinstall && ./artisan module:migrate && ./artisan module:seed`
+- `npm run dev`
 
 Pingu will be considered installed when the file `storage/installed` exists.
 
