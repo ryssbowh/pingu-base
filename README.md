@@ -19,6 +19,7 @@ This contains the laravel code base (5.7) and a few changes to the code :
 - disables laravel auto discover mechanism, here it's the modules that add packages, libraries in vendor folder should not be added automatically. If you disable a module and the libraries are still loaded it's not ideal.
 - removes default maintenance mode middleware
 - removes `ConvertEmptyStringToNull` global middleware
+- modified exception handler
 
 ## Creating a module
 use `module:make` command to create a new module.
