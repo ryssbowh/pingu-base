@@ -168,14 +168,14 @@ return [
         Laravel\Tinker\TinkerServiceProvider::class,
         Carbon\Laravel\ServiceProvider::class,
         NunoMaduro\Collision\Adapters\Laravel\CollisionServiceProvider::class,
-        Collective\Html\HtmlServiceProvider::class,
-        Orchestra\Asset\AssetServiceProvider::class,
-        Nwidart\Modules\LaravelModulesServiceProvider::class,
-        PinguInstaller\Providers\PinguInstallerServiceProvider::class
         
         /*
          * Application Service Providers...
          */
+        Collective\Html\HtmlServiceProvider::class,
+        Orchestra\Asset\AssetServiceProvider::class,
+        Nwidart\Modules\LaravelModulesServiceProvider::class,
+        PinguInstaller\Providers\PinguInstallerServiceProvider::class
     ],
 
     /*

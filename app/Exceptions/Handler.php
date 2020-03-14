@@ -57,7 +57,7 @@ class Handler extends ExceptionHandler
             if (class_exists('Theme')) {
                 \Theme::setByRequest($request);
             }
-        } catch (FatalThrowableError $e) {
+        } catch (\Exception $e) {
             return false;
         }
         return true;
