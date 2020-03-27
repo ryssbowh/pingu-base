@@ -163,8 +163,6 @@ return [
          */
         BeyondCode\DumpServer\DumpServerServiceProvider::class,
         Fideloper\Proxy\TrustedProxyServiceProvider::class,
-        Illuminate\Notifications\NexmoChannelServiceProvider::class,
-        Illuminate\Notifications\SlackChannelServiceProvider::class,
         Laravel\Tinker\TinkerServiceProvider::class,
         Carbon\Laravel\ServiceProvider::class,
         NunoMaduro\Collision\Adapters\Laravel\CollisionServiceProvider::class,
