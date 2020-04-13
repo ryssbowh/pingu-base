@@ -5,6 +5,8 @@ namespace App\Exceptions;
 use Exception;
 use Illuminate\Foundation\Exceptions\Handler as ExceptionHandler;
 use Symfony\Component\Debug\Exception\FatalThrowableError;
+use Symfony\Component\HttpKernel\Exception\HttpException;
+use Symfony\Component\HttpKernel\Exception\HttpExceptionInterface;
 
 class Handler extends ExceptionHandler
 {
@@ -45,10 +47,14 @@ class Handler extends ExceptionHandler
      * @param  \Exception  $exception
      * @return \Illuminate\Http\Response
      */
-    public function render($request, Exception $exception)
+    public function render($request, Exception $e)
     {
         $this->setTheme($request);
-        return parent::render($request, $exception);
+        if ($this->isHttpException($e) and !$request->expectsJson()) {
+            $content = view()->first(['errors.'.$e->getStatusCode(), 'errors.error'])->with(['exception' => $e]);
+            return response()->make($content, $e->getStatusCode());
+        }
+        return parent::render($request, $e);
     }
 
     public function setTheme($request)
