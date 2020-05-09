@@ -23,6 +23,7 @@ config/
 #composer
 /vendor
 composer.lock
+.composer
 
 #misc
 /.idea

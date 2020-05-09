@@ -10,6 +10,10 @@
     "repositories": [
         {
             "type": "vcs",
+            "url": "https://github.com/ryssbowh/pingu-framework"
+        },
+        {
+            "type": "vcs",
             "url": "https://github.com/ryssbowh/pingu-core-module"
         },
         {
@@ -90,10 +94,6 @@
         },
         {
             "type": "vcs",
-            "url": "https://github.com/ryssbowh/pingu-installer"
-        },
-        {
-            "type": "vcs",
             "url": "https://github.com/ryssbowh/laravel-modules"
         },
         {
@@ -103,19 +103,12 @@
     ],
     "require": {
         "php": "^7.3",
-        "composer-plugin-api": "^1.1",
-        "esensi/model": "0.6.*",
         "fideloper/proxy": "^4.0",
         "laravel/framework": "^5.8",
         "laravel/tinker": "^1.0",
-        "laravelcollective/html": "^5.8",
-        "nwidart/laravel-modules": "dev-master",
-        "paragonie/random_compat": "2.*",
+        "pingu/framework": "dev-master",
         "pingu/core-module": "dev-master",
-        "pingu/installer": "dev-master",
-        "pingu/theme-installer-plugin": "dev-master",
-        "ryssbowh/laravel-array-cache": "dev-master",
-        "ryssbowh/unique-migrations": "^1.0"
+        "pingu/theme-installer-plugin": "dev-master"
     },
     "require-dev": {
         "beyondcode/laravel-dump-server": "^1.0",
