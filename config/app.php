@@ -1,7 +1,5 @@
 <?php
 
-use PinguFramework\FrameworkServiceProvider;
-
 return [
     /*
     |--------------------------------------------------------------------------
@@ -133,7 +131,7 @@ return [
     */
 
     'providers' => [
-        FrameworkServiceProvider::class
+        \Pingu\PinguServiceProvider::class
     ],
 
     /*
